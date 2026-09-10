@@ -1,1 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>AYUSH // GAME ZONE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= INTRO ================= -->
+
+  <div id="intro">
+
+    <div class="intro-grid"></div>
+
+    <div class="intro-noise"></div>
+
+    <div class="intro-content">
+
+      <div class="intro-small">
+        SYSTEM BOOT // AYUSH GAME ENGINE
+      </div>
+
+      <div class="intro-logo">
+        AYUSH
+      </div>
+
+      <div class="intro-title">
+        GAME<br>
+        <span>ZONE</span>
+      </div>
+
+      <div class="intro-line"></div>
+
+      <div class="intro-status">
+        <span id="introStatus">INITIALIZING NEURAL ENGINE...</span>
+        <span id="introPercent">0%</span>
+      </div>
+
+      <div class="loading-box">
+        <div id="loadingBar"></div>
+      </div>
+
+      <div class="intro-terminal">
+        <div>&gt; Loading graphics engine...</div>
+        <div>&gt; Loading player profile...</div>
+        <div>&gt; Connecting game server...</div>
+        <div>&gt; Preparing arena...</div>
+      </div>
+
+      <button id="skipIntro">
+        SKIP INTRO
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= MAIN WEBSITE ================= -->
+
+  <header class="navbar">
+
+    <div class="brand">
+      <span class="brand-icon">◆</span>
+      AYUSH // ZONE
+    </div>
+
+    <nav>
+      <a href="#game">GAME</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+
+    <div class="developer">
+      FRONT-END DEVELOPER
+    </div>
+
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-bg"></div>
+
+      <div class="hero-content">
+
+        <div class="online">
+          <span></span>
+          PLAYER ONLINE
+        </div>
+
+        <div class="hero-small">
+          WELCOME TO THE DIGITAL ARENA
+        </div>
+
+        <h1>
+          NEON
+          <span>DODGE</span>
+        </h1>
+
+        <p>
+          Dodge the enemies. Collect energy cores.
+          Survive as long as possible.
+        </p>
+
+        <button class="main-button" id="heroPlay">
+          ENTER ARENA
+          <span>▶</span>
+        </button>
+
+      </div>
+
+      <div class="hero-art">
+
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+
+        <div class="energy-core">
+          <div class="core-inner"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= GAME ================= -->
+
+    <section id="game" class="game-section">
+
+      <div class="section-heading">
+        <span>01 //</span>
+        MAIN ARENA
+      </div>
+
+      <div class="game-panel">
+
+        <div class="hud">
+
+          <div class="hud-item">
+            <small>SCORE</small>
+            <strong id="score">000000</strong>
+          </div>
+
+          <div class="hud-item">
+            <small>HIGH SCORE</small>
+            <strong id="highScore">000000</strong>
+          </div>
+
+          <div class="hud-item">
+            <small>LEVEL</small>
+            <strong id="level">01</strong>
+          </div>
+
+        </div>
+
+        <div class="canvas-wrapper">
+
+          <canvas id="gameCanvas"></canvas>
+
+          <div id="gameMessage" class="game-message">
+
+            <div class="message-icon">◆</div>
+
+            <h2 id="messageTitle">
+              READY?
+            </h2>
+
+            <p id="messageText">
+              Use WASD or Arrow Keys to move.
+              Collect blue cores and avoid red enemies.
+            </p>
+
+            <button id="startGame">
+              START GAME
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="controls">
+
+          <div>
+            <b>MOVE</b>
+            WASD / ARROW KEYS
+          </div>
+
+          <div>
+            <b>OBJECTIVE</b>
+            COLLECT CORES
+          </div>
+
+          <div>
+            <b>DANGER</b>
+            AVOID ENEMIES
+          </div>
+
+        </div>
+
+        <div class="mobile-controls">
+
+          <button data-key="ArrowUp">▲</button>
+
+          <div>
+            <button data-key="ArrowLeft">◀</button>
+            <button data-key="ArrowDown">▼</button>
+            <button data-key="ArrowRight">▶</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about-section">
+
+      <div class="section-heading">
+        <span>02 //</span>
+        PLAYER PROFILE
+      </div>
+
+      <div class="about-card">
+
+        <div class="profile-number">
+          01
+        </div>
+
+        <div class="profile-content">
+
+          <div class="profile-label">
+            PLAYER / DEVELOPER
+          </div>
+
+          <h2>
+            AYUSH<br>
+            <span>TRIPATHI</span>
+          </h2>
+
+          <p>
+            I am a Front-End Developer who enjoys building
+            interactive websites, animated interfaces and
+            futuristic digital experiences.
+          </p>
+
+          <div class="skills">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVASCRIPT</span>
+            <span>UI DESIGN</span>
+            <span>ANIMATION</span>
+
+          </div>
+
+        </div>
+
+        <div class="profile-status">
+
+          <div class="status-circle">
+            ONLINE
+          </div>
+
+          <small>
+            BUILT WITH
+          </small>
+
+          <strong>
+            HTML<br>
+            CSS<br>
+            JAVASCRIPT
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div>
+      AYUSH // GAME ZONE
+    </div>
+
+    <div>
+      BUILT WITH HTML • CSS • JAVASCRIPT
+    </div>
+
+    <div>
+      © 2026 AYUSH TRIPATHI
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
